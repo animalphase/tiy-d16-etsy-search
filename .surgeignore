@@ -1,6 +1,6 @@
 node_modules/
 styles/
-main.css
+main.css.map
 .tern-project
 
 # OS generated files #

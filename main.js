@@ -85,7 +85,7 @@ function disableSearchButton(state) {
 // do the jQuery
 $(function () {
 
-  startSearch();
+  //startSearch();
 
 });
 
