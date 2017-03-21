@@ -2,7 +2,7 @@
 
 ## TIY Week 3, day 16
 
-**⭐️ live on surge: http://effie.surge.sh/ ⭐️**
+**⭐️ live on surge: http://effie-search.surge.sh/ ⭐️**
 
 ----
 
