@@ -33,7 +33,7 @@ function startSearch(e) {
   $.ajax(searchQuery).then(renderSearchResults);
 
   $g_searchResultsContentArea.html('');
-  $g_searchResultsContentArea.prepend('<div class="loader">');
+  $g_searchResultsContentArea.prepend('<div class="cp-spinner cp-pinwheel"></div>');
 }
 
 
