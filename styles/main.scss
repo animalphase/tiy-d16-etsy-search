@@ -6,15 +6,31 @@
 /* Define color variables =================== */
 $color-primary: #F56400;
 $color-text-primary: #566270;
-$color-text-secondary: #818991;
-$color-link: $color-primary;
+$color-text-secondary: #b3b6b9;
+$color-link: $color-text-primary;
 $color-link-hover: #222;
 $color-white: #fff;
 $color-background: #FAF9F5;
-$color-borders: #E0E3DA;
+$color-borders: $color-text-secondary;
 $color-price: #78c042;
+
+
+/* Define mixins =================== */
+@mixin white-card {
+  background: $color-white;
+  border-radius: .3rem;
+  box-shadow: 0 .1rem .3rem 0rem rgba(80,80,77,.5);
+}
+
+@mixin one-line-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 
 /* Import partials =================== */
 @import "base";
+@import "common-elements";
 @import "search-results";
 @import "extras";

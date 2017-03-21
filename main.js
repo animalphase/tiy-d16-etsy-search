@@ -9,18 +9,20 @@ var $searchBox = $('#search-box');
 var $searchButton = $('#search-button');
 
 
+
+
 $searchButton.on('click', startSearch);
 
-// to be a CLICK EVENT on search submit button
+
+
 function startSearch(e) {
-  console.log(e);
-  $searchButton.prop('disabled', true);
-  $searchButton.html('Searching…');
-  // change to pull in e.target, and to pull in search
   var searchTerm = $searchBox.val();
-  if(searchTerm === '') {
-    searchTerm = 'butts';
+  if(searchTerm === '' || searchTerm === undefined) {
+    //searchTerm = 'butts';
+    console.log('no search term');
+    return false;
   }
+  disableSearchButton(true);
   var formattedTerm = searchTerm.split(' ').join('+');
   var searchURL = 'https://api.etsy.com/v2/listings/active.js?api_key=r1c1d6tcwev6mwp1lny8m1p6&keywords=' +
                   searchTerm +
@@ -61,18 +63,29 @@ function renderSearchResults(data, status, xhr) {
     $currentLink.attr('title', item.description);
 
     $g_searchResultsContentArea.append($currentLink);
-    $searchButton.prop('disabled', false);
-    $searchButton.html('Search');
+    disableSearchButton(false);
   });
 }
 
+
+
+function disableSearchButton(state) {
+  if (state) {
+    $searchButton.prop('disabled', true);
+    $searchButton.html('Searching…');
+  } else {
+    $searchButton.prop('disabled', false);
+    $searchButton.html('Search');
+  }
+
+}
 
 
 
 // do the jQuery
 $(function () {
 
-  // startSearch();
+  startSearch();
 
 });
 

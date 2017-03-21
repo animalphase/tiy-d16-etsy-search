@@ -1,7 +1,7 @@
 html {
   font-size: 0.625rem; /* 10px equivalent thanks to default of 16px */
   font-family: 'Fira Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   background: $color-background;
   color: $color-text-primary;
 
@@ -15,8 +15,15 @@ body {
 }
 
 h1 {
-  font-weight: 300;
+  font-weight: 400;
   font-style: italic;
+  float: left;
+  margin: 1.2rem 2.5rem 0 0;
+  color: $color-primary;
+}
+
+h1 {
+
 }
 
 a {
@@ -29,43 +36,6 @@ a:hover {
   color: $color-link-hover;
 }
 
-header {
-  border-bottom: .1rem solid $color-text-secondary;
-  margin-bottom: 2rem;
-  padding: 3rem;
-  @include clearfix;
-  font-size: 2rem;
-  line-height: 2rem;
-}
-
-h1 {
-  float: left;
-  margin: 2rem 2rem 0 0;
-  color: $color-primary;
-}
-
-#search-form {
-  display: flex;
-  margin: 0 auto;
-  padding-right: 2rem;
-}
-  #search-box {
-    flex: 1;
-    appearance: none;
-    line-height: 1.6rem;
-    padding: 1.6rem .8rem;
-  }
-  #search-button {
-    width: 15rem;
-    appearance: none;
-    line-height: 1.6rem;
-    background: #34A8C4;
-    color: #fff;
-    font-weight: bold;
-    border: 1px solid #2F98B1;
-    border-top-right-radius: .4rem;
-    border-bottom-right-radius: .4rem;
-  }
 
 
 
