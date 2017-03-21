@@ -1,0 +1,31 @@
+.item-link {
+  display: inline-block;
+  width: 25%;
+  margin: 2rem;
+  background: $color-white;
+  border-radius: .3rem;
+  font-size: 1.2rem;
+  color: $color-text-primary;
+  box-shadow: 0 .1rem .3rem 0rem rgba(80,80,77,.5);
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 .2rem .7rem -.1rem rgba(80,80,77,.8);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+
+}
+
+
+.item-caption {
+  padding: 1rem;
+}
+
+.item-shop-name {
+  color: $color-text-secondary;
+}

@@ -1,0 +1,20 @@
+/* Include libraries =================== */
+@import "node_modules/bourbon/app/assets/stylesheets/bourbon";
+@import "node_modules/bourbon-neat/core/neat";
+
+
+/* Define color variables =================== */
+$color-primary: #F56400;
+$color-text-primary: #566270;
+$color-text-secondary: #818991;
+$color-link: $color-primary;
+$color-link-hover: #222;
+$color-white: #fff;
+$color-background: #FAF9F5;
+$color-borders: #E0E3DA;
+$color-price: #78c042;
+
+/* Import partials =================== */
+@import "base";
+@import "search-results";
+@import "extras";
